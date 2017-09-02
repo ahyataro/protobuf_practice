@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   def index
     person = Person.new(id: 100, name: 'pentagon')
     encoded_data = Person.encode(person)
-    binding.pry
 
     render body: encoded_data
   end
